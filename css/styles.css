@@ -1,0 +1,219 @@
+body{
+    background: rgb(192,225,255);
+    background: linear-gradient(30deg, rgba(192,225,255,1) 49%, rgba(255,255,255,1) 63%, rgba(114,232,246,0.3253676470588235) 78%);
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+.miPerfil {
+    display: block;
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    color: #535353;
+    line-height: 1.5rem;
+}
+
+.linkedin {
+    margin-left: 1rem;
+    color: #535353;
+}
+
+.github {
+    margin-left: 1rem;
+    color: #535353;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+.logo{
+    width: 10vw;
+    text-align: center;
+    padding-top: 30px;
+}
+.texto_1{
+    width: 60vw;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    padding-top: 13vh;
+}
+.texto-contenedor{
+    width: 85%;
+}
+.texto_1 textarea{
+    width: 100%;
+    resize: none;
+    height: 65vh;
+    background: transparent;
+    border: none;
+    font-size: 1.5em;
+    color: #0A3871;
+    font-weight: 500;
+}
+.texto_1 textarea:focus{
+    outline: none;
+}
+.texto_1 textarea::placeholder{
+    color: #0A3871;
+}
+.box-exclamation{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    color: var(--dark-gra-400);
+    padding: 1em 0;
+}
+.box-exclamation small{
+    color: #495057;
+    font-weight: 500;
+    font-size: 15px;
+}
+.buttons_wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.buttons_wrapper .buttons{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    gap: 1em;
+}
+.buttons .button{
+    padding: 15px;
+    width: 100%;
+    border-radius: 1em;
+    border: none;
+    font-weight: 600;
+}
+.buttons .button-encriptar{
+    background-color: #0A3871;
+    color: #fff;
+    cursor: pointer;
+}
+.buttons .button-desencriptar{
+    background-color: transparent;
+    border: 0.10em solid #0A3871;
+    cursor: pointer;
+}
+.texto_2{
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.texto_2 .texto-resultado{
+    width: 70%;
+    height: 80vh;
+    background-color: #fff;
+    border-radius: 2em;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0em 0em 2em 0.1em #00000051;
+}
+.texto_2.no-texto .mensaje-encontrado{
+    display: none;
+}
+.texto_2.texto .mensaje-encontrado{
+    display: flex;
+}
+.texto_2.texto .ningun-mensaje{
+    display: none;
+}
+.ningun-mensaje{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    /* display: none; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ningun-mensaje img{
+    width: 100%;
+}
+.ningun-mensaje h2{
+    color: #343A40;
+}
+.mensaje-encontrado{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    gap: 1em;
+}
+.mensaje-encontrado textarea{
+    width: 100%;
+    height: 90%;
+    resize: none;
+    border: none;
+    font-size: 1.3em;
+    color: #495057;
+}
+.mensaje-encontrado textarea:focus{
+    outline: none;
+}
+
+@media screen and (max-width: 1365px) {
+    .texto_1{
+        width: 50vw;
+    }
+    .texto_1 .texto-contenedor{
+        width: 100%;
+    }
+    .texto_2{
+        width: 40vw;
+    }
+    .box-exclamation small{
+        font-size: 13px;
+    }
+}
+
+/* MEDIA QUERY TABLET */
+
+@media screen and (max-width: 1023px) {
+    .main{
+        flex-direction: column;
+    }
+    .texto_1{
+        width: 100%;
+        padding: 0;
+        padding-top: 10vh;
+    }
+    .texto_2{
+        width: 100%;
+    }
+    .texto_1 .texto-contenedor{
+        padding: 2em;
+    }
+    .box-exclamation small{
+        font-size: 13px;
+    }
+    .buttons .button{
+        padding: 1em;
+    }
+    .texto_2 .texto-resultado{
+        min-height: 5vh;
+        height: auto;
+        max-height: 50vh;
+        width: 100%;
+        margin: 2em;
+    }
+    .ningun-mensaje img{
+        display: none;
+    }
+}
+
+/* MEDIA QUERY CELULAR */
+@media screen and (max-width: 767px) {
+    .buttons_wrapper .buttons{
+        flex-direction: column;
+        gap: 1em;
+    }
+}

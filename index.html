@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challengue 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="./icon.png">
+</head>
+
+<body>
+    <div class="main">
+        <section class="logo">
+            <img src="img/Logo.svg" alt="alura_logo" />
+        </section>
+        <section class="texto_1">
+            <div class="texto-contenedor">
+                <textarea id="inputMensaje" placeholder="Ingresa el texto aqui"></textarea>
+                <div class="box-exclamation">
+                    <img src="img/icon-vec.svg" alt="" />
+                    <small>Solo letras minusculas y sin acentos</small>
+                </div>
+                <div class="buttons_wrapper">
+                    <div class="buttons">
+                        <button id="btnEncriptado" class="button button-encriptar">
+                            ENCRIPTAR
+                        </button>
+                        <button id="btnDesencriptado" class="button button-desencriptar">
+                            DESENCRIPTAR
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="texto_2 no-texto">
+            <div class="texto-resultado">
+                <div class="ningun-mensaje">
+                    <img class="pre-informacion" src="img/persona.svg" alt="figura-persona" />
+                    <h2 class="pre-informacion">Ningún mensaje fue encontrado</h2>
+                    <p class="pre-informacion">
+                        Ingresa el texto que desees encriptar o desencriptar.
+                    </p>
+                </div>
+                <div id="resultado" class="mensaje-encontrado">
+                    <textarea name="" id="mensajeFinal"></textarea>
+                    <div class="buttons">
+                        <button id="btnCopiarResultado" class="button button-desencriptar">
+                            Copiar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="redes">
+            <h1 class="miPerfil">
+                Desarrollado por Eder ¡No olvides seguirme!
+                <a href="https://www.linkedin.com/in/eder-romero-04b7621aa/" target="_blank">
+                    <i class="linkedin fa fa-linkedin-square"></i>
+                </a>
+                <a href="https://github.com/ederromero28" target="_blank">
+                    <i class="github fa fa-github"></i>
+                </a>
+            </h1>
+        </div>
+    </footer>
+    <!-- agregamos alertas personalizadas -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Invocar al archivo JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
